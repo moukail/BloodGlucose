@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/listitem_medicine_name_rel"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/listitem_medicine_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:text="Acarbose"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listitem_medicine_unit_rel"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/listitem_medicine_dosage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="units"
+            android:textCursorDrawable="@null"
+            android:inputType="numberSigned"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:maxLength="5"
+            android:textColorHint="#999999"/>
+
+        <TextView
+            android:id="@+id/listitem_medicine_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/listitem_medicine_dosage"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/listitem_medicine_dosage"
+            android:text="mg"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/listitem_medicine_remove"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/result_item_margin_left"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/del_medication" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/txtNoteRelative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null" >
+
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="txtNote"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/allview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000" />
+  	  <com.ihealth.ciforbg.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <!-- com.jiuan.Zxing.view.ViewfinderView -->
+    <!--
+         <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+    -->
+
+    <!-- android:background="@drawable/act_manualinput_done" -->
+
+</RelativeLayout>

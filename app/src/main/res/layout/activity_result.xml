@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="700dp"
+    android:layout_height="600dp"
+    android:background="@color/settings_back_color"
+    android:id="@+id/activity_result_container">
+</RelativeLayout>

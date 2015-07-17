@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/range_margin_bottom"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/range_padding"
+        android:paddingRight="@dimen/range_padding">
+        <!--Pre meal/night-->
+        <TextView
+            android:id="@+id/fragment_range_pre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/pre_meal" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_range_pre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/range_frame_height"
+            android:layout_marginTop="@dimen/range_margin_top_1">
+
+            <RelativeLayout
+                android:id="@+id/fragment_range_pre_lower_rl"
+                android:layout_width="@dimen/range_frame_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/range_margin_left"
+                android:paddingRight="@dimen/range_margin_left"
+                android:background="@drawable/range_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Lower Limit"
+                    android:textColor="#999999"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/fragment_range_pre_unit_lower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/unit_mg"
+                    android:textColor="#bbbbbb"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fragment_target_pre_lower"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/fragment_range_pre_unit_lower"
+                    android:layout_marginRight="@dimen/range_txt_space"
+                    android:inputType="number"
+                    android:gravity="center_vertical|right"
+                    android:text="70"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:textColor="#666666"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_range_pre_upper_rl"
+                android:layout_width="@dimen/range_frame_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/range_margin_left"
+                android:paddingRight="@dimen/range_margin_left"
+                android:background="@drawable/range_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Upper Limit"
+                    android:textColor="#999999"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/fragment_range_pre_unit_upper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/unit_mg"
+                    android:textColor="#bbbbbb"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fragment_target_pre_upper"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/fragment_range_pre_unit_upper"
+                    android:layout_marginRight="@dimen/range_txt_space"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:text="100"
+                    android:textColor="#666666"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/range_margin_left_1"
+                android:paddingRight="@dimen/range_margin_left_1"
+                android:layout_toLeftOf="@+id/fragment_range_pre_upper_rl"
+                android:layout_toRightOf="@+id/fragment_range_pre_lower_rl">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/vertical_line" />
+
+                <TextView
+                    android:layout_width="@dimen/range_to_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/settings_back_color"
+                    android:gravity="center"
+                    android:text="to"
+                    android:textColor="@color/range_to"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--Post meal-->
+        <TextView
+            android:id="@+id/fragment_range_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_range_pre"
+            android:layout_marginTop="20dp"
+            android:text="@string/post_meal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/range_frame_height"
+            android:layout_marginTop="@dimen/range_margin_top_1">
+
+            <RelativeLayout
+                android:id="@+id/fragment_range_lower_rl"
+                android:layout_width="@dimen/range_frame_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/range_margin_left"
+                android:paddingRight="@dimen/range_margin_left"
+                android:background="@drawable/range_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Lower Limit"
+                    android:textColor="#999999"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/fragment_range_post_unit_lower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/unit_mg"
+                    android:textColor="#bbbbbb"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fragment_target_post_lower"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/fragment_range_post_unit_lower"
+                    android:layout_marginRight="@dimen/range_txt_space"
+                    android:inputType="number"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:text="70"
+                    android:textColor="#666666"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_range_upper_rl"
+                android:layout_width="@dimen/range_frame_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/range_margin_left"
+                android:paddingRight="@dimen/range_margin_left"
+                android:background="@drawable/range_frame">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Upper Limit"
+                    android:textColor="#999999"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/fragment_range_post_unit_upper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="@string/unit_mg"
+                    android:textColor="#bbbbbb"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/fragment_target_post_upper"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/fragment_range_post_unit_upper"
+                    android:layout_marginRight="@dimen/range_txt_space"
+                    android:inputType="number"
+                    android:gravity="center_vertical|right"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:text="100"
+                    android:textColor="#666666"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/range_margin_left_1"
+                android:paddingRight="@dimen/range_margin_left_1"
+                android:layout_toLeftOf="@+id/fragment_range_upper_rl"
+                android:layout_toRightOf="@+id/fragment_range_lower_rl">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/vertical_line" />
+
+                <TextView
+                    android:layout_width="@dimen/range_to_width"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@color/settings_back_color"
+                    android:gravity="center"
+                    android:text="to"
+                    android:textColor="@color/range_to"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/range_margin_top_2"
+            android:gravity="center"
+            android:text="Americon Diabetes Association Target Glucose Recommendations"
+            android:textColor="#666666"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="178dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/target_range"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Time" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/pre_meal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/post_meal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/pre_meal_normal_1"
+                android:id="@+id/fragment_target_normal_pre" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/post_meal_normal_1"
+                android:id="@+id/fragment_target_normal_post" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="People with Diabetes" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/pre_meal_diabetes_1"
+                android:id="@+id/fragment_target_diabetes_pre" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/post_meal_diabetes_1"
+                android:id="@+id/fragment_target_diabetes_post" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_target_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="@string/settings_item_target_range"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_text_size" />
+</RelativeLayout>

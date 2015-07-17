@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CiForBg</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="measure">Measure</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="guide_1">Connect the meter by pressing and holding the "Memory" button</string>
+    <string name="guide_2">Make sure the strip is facing up as shown</string>
+    <string name="guide_3">Obtain blood sample as shown</string>
+
+    <string name="scan_text_1">Scan QR Code</string>
+    <string name="scan_text_2">of new bottle of strips for smart tracking</string>
+
+    <!--alert-->
+    <string name="alert_stripnum0">0 test strip remaining.Scan a new vial first before proceeding into the test.</string>
+    <!--result-->
+    <string name="results">Results</string>
+    <string name="results_select_medicine">Select Medicine</string>
+    <string name="results_select_add_medicine">Add Medicine</string>
+    <string name="results_select_oral_meds">Oral Medications</string>
+    <string name="results_select_insulin">Insulin</string>
+    <string name="results_cancel">Cancel</string>
+    <string name="results_done">Done</string>
+    <string name="results_too_many_medications">You can only set up 3 medications.</string>
+    <string name="results_medication_name_null">Please input medication name.</string>
+    <!--Settings-->
+    <string name="settings_item_title">Settings</string>
+    <string name="settings_item_target_range">Target Range</string>
+    <string name="settings_item_unit">Unit</string>
+    <string name="settings_item_terms">Terms of Use</string>
+    <string name="settings_item_about_us">About Us</string>
+
+    <string name="logged">Logged in as</string>
+    <!--Target Range-->
+    <string name="pre_meal_normal_1">Less than 100 mg/dL</string>
+    <string name="pre_meal_diabetes_1">70-130 mg/dL</string>
+    <string name="post_meal_normal_1">Less than 100 mg/dL</string>
+    <string name="post_meal_diabetes_1">Less than 180 mg/dL</string>
+
+    <string name="pre_meal_normal_2">Less than 5.6 mmol/L</string>
+    <string name="pre_meal_diabetes_2">3.9-7.2 mmol/L</string>
+    <string name="post_meal_normal_2">Less than 5.6 mmol/L</string>
+    <string name="post_meal_diabetes_2">Less than 10.0 mmol/L</string>
+
+    <string name="pre_meal">Pre-Meal/Night</string>
+    <string name="post_meal">Post-Meal</string>
+    <!--Unit-->
+    <string name="settings_unit">BG Unit</string>
+    <string name="unit_mmol">mmol/L</string>
+    <string name="unit_mg">mg/dL</string>
+    <!-- user_about_us -->
+    <string name="about_us_about">About iHealth Lab,Inc.</string>
+    <string name="about_us_version">App Version:V1.0.0</string>
+    <string name="about_us_certificates">Certificates:</string>
+    <string name="about_us_design">App Design:iHealth Lab,Inc.</string>
+    <string name="about_us_txt">iHealth is dedicated to helping people lead healthier lives by making it easier for individuals of all ages to take a more active role in managing their health. We are leaders in the design and manufacture of consumer-friendly, mobile personal healthcare products that are connected through the cloud. Our goal is to deliver high quality products that are easy to use, making it simple for consumers to accurately measure, track and share a full range of health vitals. By connecting the data through the cloud, consumers are able to see a more complete view of their vitals and easily share information with healthcare professionals or loved ones. Our award-winning line of products include blood pressure monitors, blood glucose monitors, body analysis scales, pulse oximeters, and activity and sleep trackers. Our products sync directly with a free mobile app that can be downloaded from the Apple App Store or Google play. Visit %1$s for more information.</string>
+    <string name="home_web_site">www.ihealthlabs.com</string>
+    <!--terms of use-->
+    <string name="terms_of_use_txt">This IHEALTH Software End User License Agreement (the “Agreement”) governs your use of all software (“Software”) that you may download, install, or use on your computer, mobile devices or other peripherals, which software may include firmware that will run on hardware manufactured by us (“Hardware”), as well as any updates, patches, fixes and revisions that we provide thereto.  By using the Software, you agree to be bound by this Agreement.  We may change these terms at any time.   The Software is intended to be used with the IHEALTH Service, use of which is subject to the Terms and Conditions.
+License.  Subject to your compliance with the terms and conditions of this Agreement, IHEALTH LAB, Inc. (“IHEALTH” or “we” or “us”) grant you a limited, non-exclusive and non-transferable license to use the Software on a computer or other device, and to use the firmware on the Hardware manufactured by us for your personal use.  In the event you sell or otherwise transfer the Hardware to a third party, such third party must agree to the terms of this Agreement prior to using the Software.  Your use of the Software may also require you to use certain services provided by us, the use of which is governed by our Terms of Service (the “IHEALTH Service”).  For the avoidance of doubt, Software may include desktop applications, firmware, mobile applications and web applications.  We recommend against installing the Software on non-private computers as your private information may be compromised.
+Ownership.  We and our licensors and/or suppliers, as applicable, retain all right, title and interest to the Software, including all patents, copyrights, trademarks, trade secrets contained therein.
+Restrictions.  You may not distribute the Software, including by electronic transfer from one computer to another, over a network or otherwise. You may not (i) decompile, reverse engineer or attempt to reconstruct, identify or discover any source code, underlying user interface techniques or algorithms, disassemble, or otherwise reduce the Software to a human perceivable form; (ii) modify, adapt, translate, rent, lease, loan, resell, distribute, or create derivative works based upon the Software; (iii) grant any sublicense, leases or other rights in the Software to any third party; (iv) erase or otherwise attempt to create your own software to use with the Hardware; or (v) take any action that would cause the Software to be placed in the public domain. You agree not to modify any data used by the IHEALTH Service, nor to access data in any format except as provided via the IHEALTH Service.  You may not remove the copyright notices or other proprietary legends from the Software.
+Warranty Disclaimer: THE SOFTWARE IS PROVIDED “AS IS”, AT YOUR OWN RISK, WITHOUT EXPRESS OR IMPLIED WARRANTY OR CONDITION OF ANY KIND.  WE DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. We will have no responsibility for any harm to your computer system, loss or corruption of data (including your VITALS), or other harm that results from your use of the Software.  We do not warrant that the Software will meet your requirements or that the operation thereof will be uninterrupted or error free.  Some states do not allow the types of disclaimers in this paragraph, so they may not apply to you.
+Not Medical Advice.  IHEALTH is not providing medical advice via the Software.  The Software is not intended for use in the diagnosis, cure, treatment or prevention of disease.
+Limitation of Liability: To the fullest extent permitted by law, in no event will IHEALTH LAB, INC., its affiliates, officers, employees, agents, suppliers or licensors be liable for (1) any indirect, special, incidental, punitive, exemplary or consequential damages (including loss of use, data, business or profits), regardless of legal theory, even if we have been warned of the possibility of such damages and even if a remedy fails of its essential purpose; (2) direct damages for all claims arising from this Agreement in an amount greater than $100.  Some states do not allow the types of limitations in this paragraph, so they may not apply to you.
+Use of Data By using the Services you may upload personal information, such as your name, email, height, weight and age (“Personal Data”), and information contained in the hardware you purchase from us, (“Vitals”). The IHEALTH Service uses the Personal Data and the VITALS to provide you with access to those portions of VITALS that will help you utilize the IHEALTH Service.  “Viewable Data” is that portion of the VITALS and Personal Data that has been analyzed by the Services and made available to you for viewing as part of the Services.  Our use of Personal Data, VITALS and Viewable Data is outlined in our Privacy Policy.
+You May Share Your Data The Services provide features that allow you to share Viewable Data with others or to make it public. There are many things that users may do with Viewable Data, and Viewable Data may provide intimate personal information about you to the viewer. Please consider carefully what you choose to share or make public. IHEALTH has no responsibility for the portions of the Viewable Data that you elect to share.
+Feedback We do not grant you any right, title, or interest in the Services or any Content on the Site.  We appreciate it when users send us feedback, but please only provide feedback, comments, or suggestions that you agree we may use to provide the Service to you and others.
+Miscellaneous Legal Terms.  This Agreement is governed by California law, excluding California’s choice-of-law rules. The exclusive venue for any dispute relating to these terms and conditions is San Francisco County California.  Both parties consent to the personal jurisdiction of these courts.  Nothing in this agreement limits either party’s ability to seek equitable relief.  This Agreement constitutes the entire and exclusive agreement between you and IHEALTH Science, Inc. with respect to your use of the Software, and supersedes and replaces any other agreements, terms and conditions applicable to the Software.  This Agreement creates no third party beneficiary rights.  Our failure to enforce a provision is not a waiver of our right to do so later. If a provision is found unenforceable the remaining provisions of the Agreement will remain in full effect and an enforceable term will be substituted reflecting our intent as closely as possible.  You may not assign any of your rights in this Agreement, and any such attempt is void, but we may assign its rights to any of our affiliates or subsidiaries, or to any successor in interest of any business associated with the Software.</string>
+
+
+    <string name="result_select_time_period">Select Time Period</string>
+    <string name="result_took_oral_meds">Took Oral Meds</string>
+    <string name="result_took_lnsulin">Took Insulin</string>
+    <string name="exercised">Exercised</string>
+    <string name="result_carbs_hint">Enter amount of carbs</string>
+    <string name="result_sport_hint">Enter duration of activity</string>
+    <string name="result_medication">Medication</string>
+    <string name="result_note_hint">Enter Notes</string>
+    <string name="intput_result_date">Choose Date &amp; Time</string>
+    <string name="select_time_period">Select Time Period</string>
+    <string name="before_breakfast">Before Breakfast</string>
+    <string name="after_breakfast">After Breakfast</string>
+    <string name="before_lunch">Before Lunch</string>
+    <string name="after_lunch">After Lunch</string>
+    <string name="before_dinner">Before Dinner</string>
+    <string name="after_dinner">After Dinner</string>
+    <string name="bedtime">Bedtime</string>
+    <string name="after_snacks">After Snacks</string>
+    <string name="manage_history">History</string>
+    <string name="manage_logbook_carbs">Carbs</string>
+    <string name="manage_logbook_other">Other</string>
+    <string name="manage_logbook_snacks">Snacks</string>
+    <string name="Mon">Mon</string>
+    <string name="Tues">Tues</string>
+    <string name="Wed">Wed</string>
+    <string name="Thur">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+    <string name="Add_Medication">Add Medication</string>
+    <string name="select_type_of_medication">Select Type of Medication</string>
+    <string name="oral_meds">Oral Meds</string>
+    <string name="lnsulin">Insulin</string>
+    <string name="enter_medication_name">Enter Medication Name</string>
+    <string name="search">Search</string>
+    <string name="select_medicine">Select Medicine</string>
+    <string name="no_medicine">Please input medication name</string>
+    <string name="no_timeperiod">Please select time period.</string>
+    <string name="no_datetime">Please choose date and time.</string>
+    <string name="delete_item">Are you sure to delete this result?</string>
+    <string name="recent">Recent</string>
+    <string name="insulin">Insulin</string>
+    <string name="oral_medicine">Oral Medication</string>
+    <string name="hour">Hour</string>
+    <string name="Minutes">Minutes</string>
+    <string name="month_1">Jan</string>
+    <string name="month_2">Feb</string>
+    <string name="month_3">Mar</string>
+    <string name="month_4">Apr</string>
+    <string name="month_5">May</string>
+    <string name="month_6">Jun</string>
+    <string name="month_7">Jul</string>
+    <string name="month_8">Aug</string>
+    <string name="month_9">Sep</string>
+    <string name="month_10">Oct</string>
+    <string name="month_11">Nov</string>
+    <string name="month_12">Dec</string>
+
+
+    <string name="recorderror">Recording duration should not be less than 1 second</string>
+    <string name="act_manualinput_tag_hadmeal">Had meal</string>
+    <string name="act_manualinput_tag_hadsnack">Had snack</string>
+    <string name="act_manualinput_tag_excecised">Exercised</string>
+    <string name="act_manualinput_tag_tookmedicine">Took medicine</string>
+    <string name="act_manualinput_tag_random">Random</string>
+    <string name="act_manualinput_carbs">200 Carbs</string>
+    <string name="act_manualinput_minutes">30 Minutes</string>
+    <string name="act_manualinput_pills">2 Pills</string>
+    <string name="recordstatu_unrecord">Press and hold to record 1 minute</string>
+    <string name="recordstatu_deleterecord">Delete this record</string>
+    <string name="have_BG1">BG1 is plugged in, unplug after retry.</string>
+    <string name="input_note">You can enter some notes...</string>
+    <string name="record_one_minute">Recording duration should not be less than 1 second</string>
+    <string name="input_insulin_name">You can enter the name of insulin</string>
+    <string name="charging">charging</string>
+    <string name="glucose_testing_strips">Glucose Test Strips:</string>
+    <string name="valid_till">Valid till: </string>
+    <string name="number_of_strips">Number of strips: </string>
+    <string name="opened">Opened: </string>
+    <string name="ok">OK</string>
+    <string name="alert">Alert</string>
+    <string name="strip_expired">Your strip is expired</string>
+    <string name="stripnum0">There should be 0 test shrip left. To ensure accurracy, don\'t mix the test strips in the vial. Select "OK" to update the test strip quantity.</string>
+</resources>

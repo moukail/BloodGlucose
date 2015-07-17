@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="FloatActivity" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="FullScreenStyle" parent="Theme.AppCompat.Light">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 自定义dialog的style -->
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent</item>
+    </style>
+
+    <style name="scanQRDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MenuStyle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="TitleButton">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="ResultTitleButton" parent="TitleButton">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

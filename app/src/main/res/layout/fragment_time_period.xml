@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/result_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title">
+
+        <TextView
+            android:id="@+id/fragment_period_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_title_button_margin"
+            android:text="@string/cancel"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/result_title_btn_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/result_title_size"
+            android:text="@string/select_time_period"
+            android:textColor="@color/text_1" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/period_horizontal_margin"
+        android:layout_marginRight="@dimen/period_horizontal_margin"
+        android:layout_marginTop="@dimen/period_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_frame"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_before_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/select_before_breakfast_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/before_breakfast" />
+
+                <TextView
+                    android:id="@+id/select_before_breakfast_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_before_breakfast_img"
+                    android:text="@string/before_breakfast"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_before_breakfast_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_after_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/select_after_breakfast_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/after_breakfast" />
+
+                <TextView
+                    android:id="@+id/select_after_breakfast_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_after_breakfast_img"
+                    android:text="@string/after_breakfast"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_after_breakfast_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_before_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_before_lunch_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_before_lunch_img"
+                    android:text="@string/before_lunch"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_before_lunch_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/before_lunch" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_before_lunch_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_after_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_after_lunch_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_after_lunch_img"
+                    android:text="@string/after_lunch"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_after_lunch_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/after_lunch" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_after_lunch_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_before_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_before_dinner_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_before_dinner_img"
+                    android:text="@string/before_dinner"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_before_dinner_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/before_dinner" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_before_dinner_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_after_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_after_dinner_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_after_dinner_img"
+                    android:text="@string/after_dinner"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_after_dinner_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/after_dinner" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_after_dinner_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:layout_marginLeft="25dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_bedtime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_bedtime_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_bedtime_img"
+                    android:text="@string/bedtime"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_bedtime_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bedtime" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_bedtime_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:layout_marginLeft="25dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_after_snacks"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_after_snacks_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_after_snacks_img"
+                    android:text="@string/after_snacks"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_after_snacks_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/after_snacks"/>
+
+                <ImageView
+                    android:id="@+id/fragment_period_after_snacks_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:layout_marginLeft="25dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/target_line1" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_period_random"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/select_random_snacks_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/select_random_img"
+                    android:text="@string/act_manualinput_tag_random"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/select_random_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/random" />
+
+                <ImageView
+                    android:id="@+id/fragment_period_random_sel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:src="@drawable/select"
+                    android:layout_marginLeft="25dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp">
+
+        <TextView
+            android:paddingBottom="20dp"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:singleLine="false"
+            android:text="@string/terms_of_use_txt"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/fragment_target_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="@string/settings_item_terms"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_text_size" />
+
+</RelativeLayout>

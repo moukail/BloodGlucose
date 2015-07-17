@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/settings_back_color">
+        <TextView
+            android:id="@+id/ppw_timepicker_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="Cancel"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textSize="23sp"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/ppw_timepicker_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="Done"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:textSize="23sp"
+            android:textColor="@color/blue"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_alignParentTop="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    <com.ihealth.ciforbg.view.switchbutton.TimerPicker.TimePicker
+        android:id="@+id/ppw_timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+</LinearLayout>

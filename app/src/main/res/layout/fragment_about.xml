@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="64dp"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/user_about_us_about_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="@string/about_us_about"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/user_about_us_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_about_us_about_txt"
+                android:layout_marginTop="8dp"
+                android:background="#00000000"
+                android:gravity="left"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="false"
+                android:text="@string/about_us_txt"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/user_about_us_version_rl"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/user_about_us_txt"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/user_about_us_version_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:gravity="left"
+                    android:singleLine="false"
+                    android:text="@string/about_us_version"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/user_about_us_certificates_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_about_us_version_rl"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="@string/about_us_certificates"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/user_about_us_certificates_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_about_us_certificates_txt"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/setting_about_us_certificates" />
+
+            <TextView
+                android:id="@+id/user_about_us_design_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/user_about_us_certificates_img"
+                android:layout_marginTop="35dp"
+                android:background="#00000000"
+                android:gravity="left|center"
+                android:singleLine="false"
+                android:text="@string/about_us_design"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/fragment_target_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="@string/settings_item_about_us"
+        android:textColor="@color/title"
+        android:textSize="@dimen/title_text_size" />
+</RelativeLayout>

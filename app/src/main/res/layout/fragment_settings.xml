@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_back_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.32">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/vertical_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/settings_back_color"
+                        android:gravity="center"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="9dp"
+                        android:text="@string/logged"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/fragment_settings_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="#565656"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <!--divider-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4e4"/>
+                <!--Target Range-->
+                <RelativeLayout
+                    android:id="@+id/fragment_settings_target_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/fragment_settings_target_range_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/settings_item_margin_left"
+                        android:text="@string/settings_item_target_range"
+                        android:textColor="@color/settings_item_txt_color"
+                        android:textSize="@dimen/settings_item_txt_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/settings_item_margin_right"
+                        android:src="@drawable/next" />
+                </RelativeLayout>
+                <!--divider-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="23dp"
+                    android:background="#cccccc"/>
+                <!--Unit-->
+                <RelativeLayout
+                    android:id="@+id/fragment_settings_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/fragment_settings_target_unit_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/settings_item_margin_left"
+                        android:text="@string/settings_item_unit"
+                        android:textColor="@color/settings_item_txt_color"
+                        android:textSize="@dimen/settings_item_txt_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/settings_item_margin_right"
+                        android:src="@drawable/next" />
+                </RelativeLayout>
+                <!--divider-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4e4"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/settings_back_color"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4e4"/>
+                <!--Terms of use-->
+                <RelativeLayout
+                    android:id="@+id/fragment_settings_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/fragment_settings_target_terms_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/settings_item_margin_left"
+                        android:text="@string/settings_item_terms"
+                        android:textColor="@color/settings_item_txt_color"
+                        android:textSize="@dimen/settings_item_txt_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/settings_item_margin_right"
+                        android:src="@drawable/next" />
+                </RelativeLayout>
+                <!--divider-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc"
+                    android:layout_marginLeft="23dp"/>
+                <!--about us-->
+                <RelativeLayout
+                    android:id="@+id/fragment_settings_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/fragment_settings_target_about_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/settings_item_margin_left"
+                        android:text="@string/settings_item_about_us"
+                        android:textColor="@color/settings_item_txt_color"
+                        android:textSize="@dimen/settings_item_txt_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/settings_item_margin_right"
+                        android:src="@drawable/next" />
+                </RelativeLayout>
+                <!--divider-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4e4"/>
+            </LinearLayout>
+            <!--divider-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/vertical_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_measure_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_title_height"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/settings_item_title"
+                android:textColor="@color/title"
+                android:textSize="@dimen/title_text_size" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/divide_line"
+                android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_settings_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.68">
+
+    </RelativeLayout>
+</LinearLayout>

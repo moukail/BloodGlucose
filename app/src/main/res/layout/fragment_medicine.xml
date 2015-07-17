@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_back_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/result_horizontal_padding"
+            android:paddingRight="@dimen/result_horizontal_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:text="@string/results_select_oral_meds"
+                android:textColor="#444444" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <com.ihealth.ciforbg.view.MyListView
+                    android:id="@+id/fragment_medicine_oral_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:text="@string/results_select_insulin"
+                android:textColor="#444444" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="60dp">
+
+                <com.ihealth.ciforbg.view.MyListView
+                    android:id="@+id/fragment_medicine_insulin_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/result_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/results_select_medicine"
+            android:textSize="@dimen/result_title_size"
+            android:textColor="@color/text_1" />
+
+        <TextView
+            android:id="@+id/fragment_medicine_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/fragment_result_next_icon"
+            android:text="@string/results"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/result_title_btn_size" />
+
+        <ImageView
+            android:id="@+id/fragment_result_next_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_title_button_margin"
+            android:src="@drawable/back_blue" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_medicine_search"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_box">
+
+            <ImageView
+                android:id="@+id/fragment_medicine_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/fragment_medicine_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/fragment_medicine_search_del"
+                android:layout_toRightOf="@+id/fragment_medicine_search_icon"
+                android:background="@null"
+                android:textColor="@color/text_2"
+                android:textCursorDrawable="@null"/>
+
+            <ImageView
+                android:id="@+id/fragment_medicine_search_del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/btn_cancel" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fragment_medicine_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/fragment_medicine_search"
+            android:src="@drawable/add_medicine_blue" />
+    </RelativeLayout>
+</RelativeLayout>

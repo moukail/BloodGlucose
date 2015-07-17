@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring">
+            <solid android:color="#00ff00"/>
+            <size android:height="200dp" android:width="200dp"/>
+        </shape>
+    </item>
+    <item android:left="15dp" android:right="15dp">
+        <shape android:shape="ring">
+            <solid android:color="@color/settings_back_color"/>
+        </shape>
+    </item>
+</layer-list>

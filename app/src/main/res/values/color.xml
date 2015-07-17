@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="blue">#41b5e8</color>
+    <color name="imaginary_line">#cccccc</color>
+    <color name="vertical_line">#666666</color>
+    <color name="text_1">#777777</color>
+    <color name="text_2">#aaaaaa</color>
+    <color name="text_3">#c0aaaaaa</color>
+
+    <!--Measure-->
+    <color name="right_background">#eeeeee</color>
+
+    <!--settings-->
+    <color name="title">#333333</color>
+    <color name="settings_item_txt_color">#565656</color>
+    <color name="settings_back_color">#eef0f3</color>
+
+    <color name="divide_line">#e4e4e4</color>
+
+    <color name="range_to">#888888</color>
+
+    <!--result-->
+    <color name="result_text_color_1">#666666</color>
+    <color name="result_hint_text_color">#999999</color>
+    
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+</resources>

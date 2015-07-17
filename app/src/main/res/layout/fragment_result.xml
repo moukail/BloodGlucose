@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_result_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_back_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/result_horizontal_padding"
+            android:paddingRight="@dimen/result_horizontal_padding">
+
+            <RelativeLayout
+                android:id="@+id/fragment_result_bgresult_ly"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/result_circle_1">
+
+                <TextView
+                    android:id="@+id/fragment_result_bgresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="65dp"
+                    android:text="- -"
+                    android:textColor="@color/settings_item_txt_color"
+                    android:textSize="90sp" />
+
+                <TextView
+                    android:id="@+id/fragment_result_bgunit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="35dp"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_item_height"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/result_date_frame">
+
+                <ImageView
+                    android:id="@+id/fragment_result_calendar_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/result_item_margin_left"
+                    android:src="@drawable/calendar_icon" />
+
+                <TextView
+                    android:id="@+id/fragment_result_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/fragment_result_calendar_icon"
+                    android:text="Aug 6,2015" />
+
+                <ImageView
+                    android:id="@+id/fragment_result_time_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/clock_icon" />
+
+                <TextView
+                    android:id="@+id/fragment_result_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/fragment_result_time_icon"
+                    android:text="8:30 pm" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_result_time_period"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_item_height"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame">
+
+                <ImageView
+                    android:id="@+id/fragment_result_time_period_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/result_item_margin_left"
+                    android:src="@drawable/before_breakfast" />
+
+                <TextView
+                    android:id="@+id/fragment_result_time_period_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fragment_result_time_period_icon"
+                    android:text="@string/before_breakfast"
+                    android:textColor="@color/result_text_color_1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/result_item_margin_left"
+                    android:src="@drawable/next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame">
+
+                <LinearLayout
+                    android:id="@+id/fragment_result_took_insulin"
+                    android:layout_width="@dimen/result_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fragment_result_fragment_result_took_insulin_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/result_button_vertical_margin"
+                        android:src="@drawable/insulin_no" />
+
+                    <TextView
+                        android:id="@+id/fragment_result_fragment_result_took_insulin_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/result_took_lnsulin"
+                        android:textColor="@color/result_text_color_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_result_took_oral"
+                    android:layout_width="@dimen/result_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/result_button_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fragment_result_took_oral_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/result_button_vertical_margin"
+                        android:src="@drawable/medicine_no" />
+
+                    <TextView
+                        android:id="@+id/fragment_result_took_oral_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/result_took_oral_meds"
+                        android:textColor="@color/result_text_color_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_result_took_exercised"
+                    android:layout_width="@dimen/result_button_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/result_button_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fragment_result_took_exercised_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/result_button_vertical_margin"
+                        android:src="@drawable/sport_no" />
+
+                    <TextView
+                        android:id="@+id/fragment_result_took_exercised_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/exercised"
+                        android:textColor="@color/result_text_color_1" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_item_height"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame">
+
+                <ImageView
+                    android:id="@+id/fragment_result_carbs_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/result_item_margin_left"
+                    android:src="@drawable/carbs_icon" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fragment_result_carbs_icon"
+                    android:background="@null"
+                    android:hint="@string/result_carbs_hint"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/result_text_color_1"
+                    android:textColorHint="@color/result_hint_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_result_activity_ly"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_item_height"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame">
+
+                <ImageView
+                    android:id="@+id/fragment_result_activity_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/result_item_margin_left"
+                    android:src="@drawable/activity_icon" />
+
+                <TextView
+                    android:id="@+id/fragment_result_activity_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fragment_result_activity_icon"
+                    android:background="@null"
+                    android:textColor="@color/result_text_color_1"
+                    android:hint="@string/result_sport_hint"
+                    android:textColorHint="@color/result_hint_text_color" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/result_item_height">
+
+                    <ImageView
+                        android:id="@+id/fragment_result_medication_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/result_item_margin_left"
+                        android:src="@drawable/medication_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/fragment_result_medication_icon"
+                        android:text="@string/result_medication"
+                        android:textColor="@color/result_text_color_1" />
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_result_add_medication"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/result_item_margin_left">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/add_medication" />
+                        </RelativeLayout>
+                </RelativeLayout>
+
+                <com.ihealth.ciforbg.view.MyListView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/fragment_result_medication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_item_height"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="@dimen/result_item_space"
+                android:background="@drawable/edit_frame">
+
+                <ImageView
+                    android:id="@+id/fragment_result_notes_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/result_item_margin_left"
+                    android:src="@drawable/notes_icon" />
+
+                <EditText
+                    android:id="@+id/fragment_result_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fragment_result_notes_icon"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:hint="@string/result_note_hint"
+                    android:textColor="@color/result_text_color_1"
+                    android:textColorHint="@color/result_hint_text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/result_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="Result"
+            android:textSize="@dimen/result_title_size"
+            android:textColor="@color/text_1" />
+
+        <TextView
+            android:id="@+id/fragment_result_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/fragment_result_next_icon"
+            android:text="Next Step"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/result_title_btn_size"/>
+
+        <ImageView
+            android:layout_marginRight="@dimen/activity_title_button_margin"
+            android:id="@+id/fragment_result_next_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/next_blue" />
+
+        <TextView
+            android:id="@+id/fragment_result_cancel"
+            android:layout_marginLeft="@dimen/activity_title_button_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/cancel"
+            android:gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/result_title_btn_size"/>
+    </RelativeLayout>
+</RelativeLayout>

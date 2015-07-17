@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="period_txt">
+        <item>@string/before_breakfast</item>
+        <item>@string/after_breakfast</item>
+        <item>@string/before_lunch</item>
+        <item>@string/after_lunch</item>
+        <item>@string/before_dinner</item>
+        <item>@string/after_dinner</item>
+        <item>@string/bedtime</item>
+        <item>@string/after_snacks</item>
+    </string-array>
+</resources>

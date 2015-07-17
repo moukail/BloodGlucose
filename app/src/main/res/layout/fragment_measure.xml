@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="#f8f8f8" />
+
+                <View
+                    android:id="@+id/fragment_measure_imaginary_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/imaginary_line" />
+
+                <TextView
+                    android:id="@+id/fragment_measure_guide_txt"
+                    android:layout_width="@dimen/fragment_guide_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="@string/guide_1"
+                    android:textColor="@color/text_1"
+                    android:textSize="@dimen/fragment_guide_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/guide_light_margin_top">
+
+                <ImageView
+                    android:id="@+id/fragment_measure_step_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lignt_step_1_1" />
+
+                <ImageView
+                    android:id="@+id/fragment_measure_step_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/guide_light_margin_left"
+                    android:layout_marginRight="@dimen/guide_light_margin_left"
+                    android:src="@drawable/lignt_step_2_1" />
+
+                <ImageView
+                    android:id="@+id/fragment_measure_step_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lignt_step_3_1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fragment_measure_guide_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/fragment_guide_image_margin_bottom"
+                android:src="@drawable/guide_image_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.32"
+            android:background="@color/right_background">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@color/vertical_line" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_measure_scan"
+                android:layout_width="@dimen/scan_width"
+                android:layout_height="@dimen/scan_height"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/fragment_measure_scan_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/scan_disable" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_measure_scan_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/scan_text_1"
+                        android:textColor="@color/text_2"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/scan_text_2"
+                        android:textColor="@color/text_3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_measure_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title"
+        >
+        <TextView
+            android:id="@+id/fragment_measure_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:layout_marginLeft="@dimen/activity_title_button_margin"
+            android:textSize="28sp"
+            android:textColor="@color/blue"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_title_button_margin"
+            android:src="@drawable/logo"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_ihealth"
+            />
+    </RelativeLayout>
+</RelativeLayout>
